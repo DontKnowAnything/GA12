@@ -1,56 +1,62 @@
+
 /**
- * 
- * @author pcmcknew1
  *
+ * @author User
  */
-public class Node {
-	private float floatPoint;
-	private Node next;
+public class Node
+{ private float dataValue;
+   private Node next;
 
-	/**
-	 * 
-	 */
-	public Node() {
-		// TODO Auto-generated constructor stub
-		
-	}
+    /**
+     *
+     */
+    public Node()
+   { dataValue = 0;
+      next = null;
+   }
 
-	/**
-	 * @param floatPoint 
-	 */
-	public Node(float floatPoint) {
-		setFloatPoint(floatPoint);
-		next = null;
-	}
+    /**
+     *
+     * @param val
+     */
+    public Node(float val)
+   { dataValue=val;
+      next = null;
+   }
 
-	/**
-	 * @return The data value
-	 */
-	public float getFloatPoint() {
-		return floatPoint;
-	}
+    /**
+     *
+     * @param newData
+     */
+    public void setDataValue(float newData)
+   { dataValue = newData;
+   }
 
-	/**
-	 * @param floatPointValue 
-	 */
-	public void setFloatPoint(float floatPointValue) {
-		float point = floatPointValue;
-		floatPoint = point;
-	}
+    /**
+     *
+     * @return
+     */
+    public float getDataValue()
+   { 
+      float dV=dataValue;
+      return dV;
+   }
 
-	/**
-	 * @return The next node
-	 */
-	public Node getNext() {
-		return next;
-	}
+    /**
+     *
+     * @param nextNode
+     */
+    public void setNext(Node nextNode)
+   { next = nextNode;
+   }
 
-	/**
-	 * @param nextNode 
-	 */
-	public void setNext(Node nextNode) {
-		Node setNextNode=nextNode;
-		next = setNextNode;
-	}
-
+    /**
+     *
+     * @return
+     */
+    public Node getNext()
+   { Node n=next;
+      return n;
+   }
+   
 }
