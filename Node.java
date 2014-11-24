@@ -4,41 +4,43 @@
  * @author User
  */
 public class Node
-{ private float dataValue;
+{ private float floatPoint;
    private Node next;
 
     /**
      *
      */
     public Node()
-   { dataValue = 0;
+   { floatPoint = 0;
       next = null;
    }
 
     /**
+     * 
      *
-     * @param val
+     * @param p
      */
-    public Node(float val)
-   { dataValue=val;
+    public Node(float p)
+   { floatPoint=p;
       next = null;
    }
 
     /**
+     * Hopefully correctly mutates the float
      *
-     * @param newData
+     * @param newFloat
      */
-    public void setDataValue(float newData)
-   { dataValue = newData;
+    public void setFloatPoint(float newFloat)
+   { floatPoint = newFloat;
    }
 
     /**
      *
      * @return
      */
-    public float getDataValue()
+    public float getFloatPoint()
    { 
-      float dV=dataValue;
+      float dV=floatPoint;
       return dV;
    }
 
